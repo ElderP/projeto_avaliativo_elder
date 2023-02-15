@@ -13,7 +13,8 @@ public class Aluno {
     private String nome;
     private Integer idade;
     private Boolean matriculado;
-
+    @ManyToOne
+    @JoinColumn(name = "turma_id")
     private Turma turma;
 
 
